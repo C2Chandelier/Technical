@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background: linear-gradient(#21A393, #0A073F);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.App-header button {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-size: contain;
+  border: 4px solid white;
+}
+
+#cash {
+  background-image: url("../public/cash.jpg");
+}
+
+#star {
+  background-image: url("../public/star.jpg");
+  cursor: pointer;
+}
+
+#empty {
+  background-color: #F6D25A;
+}
+
+@media screen and (max-width: 400px) {
+  .App-header button {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+.modal {
+  font-size: 12px;
+  background-color:  #F8ECBE;
+  border-radius: 10px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
